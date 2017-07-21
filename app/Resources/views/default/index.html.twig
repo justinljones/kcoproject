@@ -6,6 +6,40 @@
             
         {% block body %}     
 	<body>
+            <style>
+    
+		body, html {
+                    background-color:black;
+                    height:100%;
+		}
+
+		p {
+                    color:white;
+                }
+                
+                div {
+                    border: solid 1px red;
+                    color: white;
+                    
+                }
+                
+                h1 {
+                    text-align: center;
+                    color:white;
+                }
+                
+                #archive {
+                    text-align: center;
+                }
+                
+                #articles{
+                    text-align:center;
+                }
+                
+                #sReadings{
+                    text-align: center;
+                }            
+            </style>
            
             <div class="container-fluid">
                 <!--Title Box -->
@@ -70,8 +104,8 @@
                 <p id="opening_para">The start of something big</p>
             </div>
             {% block javascripts %}
-                <script src="web/js/jquery.min.js"></script>
-                <script src="web/js/bootstrap.min.js"></script>
+                <script src="js/jquery.min.js"></script>
+                <script src="js/bootstrap.min.js"></script>
             {% endblock %}
             
 	</body>
@@ -79,39 +113,4 @@
 
 
 
-{% block stylesheets %}
-<style>
-    
-		body, html {
-                    background-color:black;
-                    height:100%;
-		}
 
-		p {
-                    color:white;
-                }
-                
-                div {
-                    border: solid 1px red;
-                    color: white;
-                    
-                }
-                
-                h1 {
-                    text-align: center;
-                    color:white;
-                }
-                
-                #archive {
-                    text-align: center;
-                }
-                
-                #articles{
-                    text-align:center;
-                }
-                
-                #sReadings{
-                    text-align: center;
-                }            
-            </style>
-{% endblock %}
