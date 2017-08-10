@@ -72,7 +72,23 @@
                 <div class="row">
                     <div id="archive" class="col-sm-2 w-100">                        
                         <p>Archives</p>
-                        <p>A list of previous articles, organized by month</p>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="ArchiveButton" data-toggle="dropdown">
+                                Year
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="ArchiveButton">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="ArchiveMonthButton" data-toggle="dropdown">
+                                        Month
+                                    </button>
+                                        <div class="dropdown-menu" aria-labelledby="ArchiveMonthButton">
+                                            <a class="dropdown-item" href='#'>Article Title/Date</a>
+                                            <a class='dropdown-item' href="#">Article Title/Date</a>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
                 
@@ -96,7 +112,7 @@
                     </div>                   
                     <div id="sReadings" class="col-sm-2 w-100">
                         <p>Suggested Readings Box</p>
-                        <p>A Continuously Updating list of sites followed regularly</p>
+                        <p><a href="https://www.zerohedge.com">Zerohedge</a></p>
                     </div>                   
                 </div>
                 <p>{% include 'Homepage/footer.html.twig' %}</p>
